@@ -16,6 +16,7 @@ const MAPPING = {
   'star.fill': 'star',
   'archive.fill': 'archive',
   'hive.fill': 'hive',
+  'contact.fill': 'contact',
 } as Partial<
   Record<
     import('expo-symbols').SymbolViewProps['name'],
