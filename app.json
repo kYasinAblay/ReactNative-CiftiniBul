@@ -4,8 +4,7 @@
     "slug": "memory-game",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/memory-game.png",
-    "scheme": "myapp",
+    "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -15,19 +14,6 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.kamilyasinablay.memorygame"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.kamilyasinablay.memorygame",
-      "versionCode": 1,
-      "permissions": []
-    },
     "web": {
       "favicon": "./assets/images/favicon.png"
     },
@@ -41,6 +27,14 @@
       "eas": {
         "projectId": "f4945f93-2132-4c4a-9d1c-b80fb9dee0f3"
       }
+    },
+    "android": {
+      "package": "com.savior0nly.memorygame",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "versionCode": 1
     }
   }
 }
