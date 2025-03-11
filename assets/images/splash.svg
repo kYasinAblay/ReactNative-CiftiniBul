@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1242" height="2436" viewBox="0 0 1242 2436" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Arka plan -->
+  <rect width="1242" height="2436" fill="#FFFFFF"/>
+  
+  <!-- İkon -->
+  <g transform="translate(221,818) scale(0.8)">
+    <!-- Sol Kart (Kapalı) -->
+    <g filter="url(#shadow1)">
+      <rect x="212" y="312" width="280" height="400" rx="20" fill="#FF5722"/>
+      <rect x="232" y="332" width="240" height="360" rx="15" stroke="#FFFFFF" stroke-width="4" fill="none"/>
+    </g>
+
+    <!-- Sağ Kart (Açık) -->
+    <g filter="url(#shadow2)">
+      <rect x="532" y="312" width="280" height="400" rx="20" fill="#2196F3"/>
+      <circle cx="672" cy="512" r="80" fill="#FFFFFF"/>
+      <path d="M672 452v120M612 512h120" stroke="#2196F3" stroke-width="20" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Uygulama Adı -->
+  <text x="621" y="1436" font-family="Arial" font-size="64" font-weight="bold" fill="#333333" text-anchor="middle">
+    Çiftini Bul
+  </text>
+
+  <!-- Gölge Filtreleri -->
+  <defs>
+    <filter id="shadow1" x="202" y="302" width="300" height="420" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.25"/>
+    </filter>
+    <filter id="shadow2" x="522" y="302" width="300" height="420" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+</svg> 
