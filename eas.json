@@ -1,22 +1,18 @@
 {
   "cli": {
-    "version": ">= 5.9.1",
-    "appVersionSource": "local"
+    "version": ">= 5.9.1"
   },
   "build": {
-    "preview": {
-      "android": {
-        "buildType": "apk",
-        "gradleCommand": ":app:assembleDebug",
-        "withoutCredentials": true
-      }
-    },
     "development": {
       "developmentClient": true,
       "distribution": "internal",
       "android": {
-        "buildType": "apk",
-        "gradleCommand": ":app:assembleDebug"
+        "buildType": "apk"
+      }
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk"
       }
     },
     "production": {}
