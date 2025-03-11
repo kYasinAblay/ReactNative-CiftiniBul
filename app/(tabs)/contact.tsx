@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 const ContactScreen = () => {
   const handleEmailPress = () => {
-    Linking.openURL('mailto:yasinablay@gmail.com');
+    Linking.openURL('mailto:kamilyasinablay@hotmail.com');
   };
 
   const handleGithubPress = () => {
@@ -12,7 +12,7 @@ const ContactScreen = () => {
   };
 
   const handleLinkedInPress = () => {
-    Linking.openURL('https://www.linkedin.com/in/yasin-ablay/');
+    Linking.openURL('https://www.linkedin.com/in/kamilyasinablay/');
   };
 
   return (
