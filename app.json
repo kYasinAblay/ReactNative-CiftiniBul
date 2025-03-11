@@ -14,8 +14,12 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "web": {
-      "favicon": "./assets/images/favicon.png"
+    "android": {
+      "package": "com.savior0nly.memorygame",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
     },
     "plugins": [
       "expo-router"
@@ -27,14 +31,6 @@
       "eas": {
         "projectId": "f4945f93-2132-4c4a-9d1c-b80fb9dee0f3"
       }
-    },
-    "android": {
-      "package": "com.savior0nly.memorygame",
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "versionCode": 1
     }
   }
 }
