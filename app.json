@@ -20,7 +20,8 @@
         "backgroundColor": "#ffffff"
       },
       "permissions": [],
-      "versionCode": 1
+      "versionCode": 1,
+      "package": "com.savior0nly.memorygame"
     },
     "plugins": [
       "expo-router"

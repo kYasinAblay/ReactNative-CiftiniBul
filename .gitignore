@@ -77,5 +77,4 @@ local.properties
 .metro-health-check*
 
 # Native folders
-/android
 /ios
