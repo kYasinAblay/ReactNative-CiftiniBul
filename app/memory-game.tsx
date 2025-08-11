@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Dimensions,ScrollView } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Ionicons } from '@expo/vector-icons';
 
@@ -39,7 +39,7 @@ const MemoryGame = () => {
 
   const initializeGame = () => {
     // 1'den 5'e kadar olan sayıları iki kez içeren bir dizi oluştur
-    const numbers = [...Array(5)].map((_, index) => index + 1);
+    const numbers = [...Array(6)].map((_, index) => index + 1);
     const pairs = [...numbers, ...numbers];
     
     // Kartları karıştır
@@ -99,7 +99,7 @@ const MemoryGame = () => {
       
       setTimeout(() => {
         setFlippedIndices([]);
-      }, 1000);
+      }, 750);
     }
   };
 
@@ -109,6 +109,7 @@ const MemoryGame = () => {
 
   return (
     <View style={styles.container}>
+      <ScrollView>
       <View style={styles.headerContainer}>
         <View style={styles.statsContainer}>
           <Text style={styles.statText}>Toplam Hamle: {moveCount}</Text>
@@ -141,7 +142,7 @@ const MemoryGame = () => {
         <View style={styles.winContainer}>
           <Text style={styles.winText}>Tebrikler! Oyunu Kazandınız!</Text>
           <Text style={styles.finalScore}>Toplam {moveCount} hamlede</Text>
-          <Text style={styles.finalScore}>{formatTime(timer)} sürede tamamladınız!</Text>
+          <Text style={styles.finalScore}>Süre {formatTime(timer)}'de tamamladınız!</Text>
           <TouchableOpacity 
             style={styles.restartButton}
             onPress={initializeGame}
@@ -150,6 +151,7 @@ const MemoryGame = () => {
           </TouchableOpacity>
         </View>
       )}
+      </ScrollView>
     </View>
   );
 };
