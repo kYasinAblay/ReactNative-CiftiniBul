@@ -25,7 +25,6 @@
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="memory-game"/>
-        <data android:scheme="com.savior0nly.memorygame"/>
       </intent-filter>
     </activity>
   </application>
