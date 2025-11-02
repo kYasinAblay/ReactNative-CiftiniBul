@@ -4,10 +4,10 @@
     "slug": "memory-game",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/memory_game.png",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/memory_game.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
